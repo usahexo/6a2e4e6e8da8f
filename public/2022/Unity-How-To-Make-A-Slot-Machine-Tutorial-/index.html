@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Unity How To Make A Slot Machine Tutorial | Competition Swimwear,Swimsuits,Gear - Qjympj.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Competition Swimwear,Swimsuits,Gear - Qjympj.com</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Shop from a selection of affordable mens swimwear, womens swimsuits and gear for the water.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Unity-How-To-Make-A-Slot-Machine-Tutorial-" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/" class="article-date">
+  <time class="dt-published" datetime="2022-12-25T02:14:56.000Z" itemprop="datePublished">2022-12-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Casino/">Casino</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Unity How To Make A Slot Machine Tutorial
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Unity-How-To-Make-A-Slot-Machine-Tutorial"><a href="#Unity-How-To-Make-A-Slot-Machine-Tutorial" class="headerlink" title="Unity How To Make A Slot Machine Tutorial"></a>Unity How To Make A Slot Machine Tutorial</h1><p>In this tutorial we will be making a basic slot machine using Unity. We will cover the basics of scripting in C#, creating textures and sprites, and rigging up game play mechanics.</p>
+<p>Creating the Project </p>
+<p>Start by creating a new project in Unity and selecting 3D from the setting options. We will be creating a simple slot machine that looks like this:</p>
+<p>To create our machine we will need the following assets:</p>
+<p>3d Model for the machine base<br>3d Models for the reel images<br>2d Texture for the reel spinning animation<br>Sprite for the coin<br>Scripting files<br>The first thing we need to do is create our 3d model for the base of the machine. I found a nice free 3d model from TurboSquid that we can use as our starting point. You can download it here . Once you have downloaded and imported the model into Unity, delete the default cube that is created and replace it with our new model. You will also need to create a plane to use as our background. To do this, select GameObject &gt; 3D Object &gt; Plane from the top menu bar. With both objects selected, click on Add Component &gt; Physics 2D &gt; Mesh Collider 2D. This will add a physics collider to each object which will allow us to interact with them in-game. Now that our scene is set up, lets start creating our reel images.<br>Reel Images<br>For our reel images, we are going to be using some simple 2d textures. I found some free textures on Textures.com that we can use. Download them here . After you have downloaded the textures, import them into Unity and select them from your Project Window . With the textures selected, click on Add Component &gt; Sprite Renderer . This will add a sprite renderer to each texture which will allow us to display them in-game. Next, drag each texture onto one of your reel models (they don’t all have to be on one model). This will automatically create a sprite for each texture and map it to the correct part of the model. Make sure you set the Texture Mode dropdown to Multiple so that each texture is displayed independently. Now that our reel images are set up, lets create our spinning animation texture.<br>Spinning Animation Texture<br>For our spinning animation texture, we are going to create a simple 8 frame animation using Photoshop or any other image editing software. The animation should look something like this:</p>
+<p>Once you have created your animation, import it into Unity and select it from your Project Window . With the animation selected, click on Add Component &gt; Sprite Renderer . This will add a sprite renderer to your animation which will allow you to display it in-game. Next, drag the sprite onto your Machine Base object in Hierarchy view . This will automatically create a sprite for your animation and map it to the correct part of your model.. Finally, set the Texture Mode dropdown to Animated . Now that all of our textures are set up, lets start rigging up game play mechanics.<br>Game Play Mechanics<br>To make our slot machine work properly, we need to script some basic game play functionality into it. For this tutorial we will be using C# scripting but you could also use Java or JavaScript if you prefer. Start by creating a new file called SlotMachineScript in your project and add the following code:  using System; using UnityEngine; &#x2F;&#x2F; Sets up Arduino connection public class SlotMachineScript : MonoBehaviour { &#x2F;&#x2F;Defines variables private int totalCoins &#x3D; 0; &#x2F;&#x2F;The amount of coins currently in circulation private int playerCoins &#x3D; 0; &#x2F;&#x2F;The amount of coins currently held by player private int betCoinAmount &#x3D; 1; &#x2F;&#x2F;The amount bet on each spin private int resultCoinAmount &#x3D; 0; &#x2F;&#x2F;The amount won&#x2F;lost on each spin private int[] reelImages; &#x2F;&#x2F;Array containing images used for reels private bool[] playing ReelOne &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel One private bool[] playing ReelTwo &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel Two private bool[] playing ReelThree &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel Three private void Start() { } &#x2F;** * Spins reels <em>&#x2F; void SpinReels() { if (playingReelOne) return; playingReelOne &#x3D; true; resultCoinAmount &#x3D; 0;totalCoins +&#x3D; betCoinAmount; try { if (betCoinAmount &#x3D;&#x3D; 1) yield return StartCoroutine(“PlayRandomReel”); else yield return StartCoroutine(“PlayAllReels”); } catch {} playingReelOne &#x3D; false; } &#x2F;</em>* * Called when reels stop *&#x2F; void OnStop() { Debug.Log(“Result</p>
+<h1 id="Unity-3D-How-To-Make-A-Slot-Machine"><a href="#Unity-3D-How-To-Make-A-Slot-Machine" class="headerlink" title="Unity 3D - How To Make A Slot Machine"></a>Unity 3D - How To Make A Slot Machine</h1><p>In this tutorial we will be making a slot machine in Unity 3D. </p>
+<p>First, create a new 3D project in Unity and select “3D” as the template.</p>
+<p>Now we will need to create a cube for our slot machine. In the Hierarchy window, click on Create &gt; 3D Object &gt; Cube. Rename the cube “SlotMachine”.</p>
+<p>We will now need to create the three reels for our slot machine. In the Hierarchy window, click on Create &gt; 3D Object &gt; Plane. Name the plane “Reel1”. Duplicate the plane three times by pressing Ctrl + D on your keyboard and name each plane “Reel2”, “Reel3”, and “Reel4”.</p>
+<p>We will now position the planes in front of the SlotMachine cube. In the Scene view, select all four planes and click on the Align button in the toolbar (located at the top-right corner of the Scene view). Select Horizontal Align Middle and Vertical Align Middle. You can also press Alt + A on your keyboard to do this quickly.</p>
+<p>Now we need to create our slots for the reels. In the Hierarchy window, click on Create &gt; 3D Object &gt; Cylinder. Name it “Slot1” and place it at position (X: 0, Y: 0, Z: -5). Do this again for Slot2 and Slot3, but make sure they are positioned at (X: 2, Y: 0, Z: -5) and (X: 4, Y: 0, Z: -5), respectively.</p>
+<p>We will now make our reel spinners. In the Hierarchy window, click on Create &gt; 3D Object &gt; Sphere. Name it “Spinner” and place it at position (X: 1, Y: 1, Z: -2).</p>
+<p> Finally, we need to add a material to our SlotMachine cube. In the Project window, double-click on Materials and rename it “Mat”. Click on Add New Material and rename it “Metal”. Drag Metal onto SlotMachine in the Hierarchy window.</p>
+<p>Now that we have everything set up, we can start scripting! Open up Scripts &gt; SlotMachineScript in MonoDevelop or your favorite text editor. At the top of the script we willdeclare some variables that will hold our reel data .  </p>
+<p>public class SlotMachineScript : MonoBehaviour {<br>[SerializeField] private int[] _reelData &#x3D; new int[4]; &#x2F;&#x2F; Reel data   </p>
+<p>Next we will add a function that will generate random reel data . </p>
+<p>private void genReelData() { &#x2F;&#x2F; Generates random reel data }<br>} </p>
+<p>This function will take an input of two integers between 0 and 3 inclusive . It will then use these numbers as indices into an array to generate random reel data . </p>
+<p>private void genReelData(int num1, int num2) { &#x2F;&#x2F; Generates random reel data int index1 &#x3D; _reelData[num1]; int index2 &#x3D; _reelData[num2]; &#x2F;&#x2F; Gets random number between 0 and 9 inclusive Random randomNumber &#x3D; new Random(); int result &#x3D; randomNumber.Next(10); &#x2F;&#x2F; Assigns value at result to _reelData[index1] _reelData[index1] &#x3D; result; &#x2F;&#x2F; Assigns value at result to _reelData[index2] _reelData[index2] &#x3D; result; }</p>
+<h1 id="How-To-Create-A-Slot-Machine-In-Unity-4-Unity-5-How-To-Make-A-Slot-Machine"><a href="#How-To-Create-A-Slot-Machine-In-Unity-4-Unity-5-How-To-Make-A-Slot-Machine" class="headerlink" title="How To Create A Slot Machine In Unity 4. Unity 5 - How To Make A Slot Machine"></a>How To Create A Slot Machine In Unity 4. Unity 5 - How To Make A Slot Machine</h1><p>In this tutorial we will create a basic slot machine game in Unity 5. You will learn how to create the spinning wheel and how to add the winning and losing result.</p>
+<p>##Creating the Spinning Wheel</p>
+<p>The spinning wheel is a simple object that can be created using a Unity primitive. In the Hierarchy panel, create a Spinner object and rename it to SpinWheel.</p>
+<p>Select the SpinWheel object and in the Inspector panel, change the Size to (X: 2, Y: 5, Z: 1). This will create a small wheel that is 2 units wide by 5 units high and has a depth of 1 unit.</p>
+<p>With the SpinWheel selected, click on the Add Component button at the bottom of the Inspector panel and select Mesh Filter. Change the Mesh Preset to Circle and set the Radius to 1. This will create a circular mesh for the wheel.</p>
+<p>Now we need to create a Material for our wheel. In the Project panel, right-click on Materials and select Create &gt; Material. Rename the material to SpinWheelMaterial and open it for editing.</p>
+<p>In the Inspector panel, change the Shader to Standard &gt; Diffuse. Then click on the Add button next to Main Texture and select Load Image.. Navigate to &#x2F;Spinners&#x2F;Prefabs&#x2F;SpinwheelTexture.jpg and select it. Click on Apply in order to apply these changes.</p>
+<p>Back in Unity, select Main Camera from the Hierarchy panel and in the Inspector panel disable both Cast Shadows and Receive Shadows (we don’t need them for this simple game).</p>
+<p>  Now we need to attach our SpinWheel object to our Main Camera so it will follow it around as we move our camera around. With Main Camera selected, go to Component &gt; Physics &gt; Rigidbody2D and disable Dragging checkbox (we don’t want our wheel spinning around randomly). Then click on Add Component button at bottom of Inspector panel and select Wheel Collider 2D. This will add a collider component to our SpinWheel object which will make it interact with other objects in our scene when we run our game. </p>
+<p> With SpinWheel still selected, go back to Add Component &gt; Mesh Filter menu and underPreset choose Plane. This will give us a flat plane mesh instead of a curved one. Click on Applybutton in order for these changes take effect.. </p>
+<p> Finally, we need to position our SpinWheel object in front of our Main Camera so you can see it when you play our game.. In Hierarchy Panel select Transform &gt; Positionand enter these values: X: 0, Y: -5, Z: 5 .This will position our spinwheel 5 units from camera horizontally and 0 units from camera vertically (assuming you have your MainCamera located at 0 ,0 ,0 in scene)</p>
+<p> You should now have something that looks like this:</p>
+ <img src="https://images-na.ssl-images-amazon.com/images/I/81st4aO4dUL._SL1500_.jpg" />
+
+
+<p> ##Adding The Results Text<br>Now we’ll add some text elements that will show whether you’ve won or lost money depending on outcome of spin.. In Hierarchy Panel create new Text GameObjectand rename it ResultsText .  With ResultsText selected go to Component &gt; UI &gt; Text .In Text properties window set Font Sizeto 20 ,TextColorto white , Alignmentto Center Alignedand Linespacingto 0 .Then under Sprite Renderer setSourceRectangleModeto Wrap Along Extent .This way our text will be displayed across whole screen instead of being centered only in middle.. </p>
+<p> Next we need two images that will indicate whether player has won or lost money .Create new folder called &#x2F;Spinners&#x2F;Textures inside your project’s Assets folderand within that folder create new file called ResultWinTexture .Open ResultWinTexture file for editing in any photo editor such as Photoshopor Gimp . Paste following imageinto file : </p>
+ <img src="/Spinners/Textures/ResultWinTexture" /> 
+
+<p> For ResultLoseTexturefile do same thing but use following image instead : </p>
+ <img src="/Spinners/Textures/ResultLoseTexture" /> 
+
+<p> Back in Unity under &#x2F;Spinners&#x2F;Texturesfolder find two textures you just created( ResultWinTextureand ResultLoseTexture )and drag them into Texture propertywindowunder Sprite Rendererof ResultsText GameObject ..You should now see something like this :  </p>
+<p> ##Making The Slot Machine Work Now that we have all basic elements in place its time start making our slot machine actually do something ! Lets first create functionthatwill determine outcome of player’s spin ..Create new C# script filecalled SlotMachineMathandsave it into folder &#x2F;Assets&#x2F;Scripts .Open SlotMachineMathscript file for editing .Paste following code into it :<br>&lt;&#x2F;</p>
+<h1 id="5-Making-a-Slot-Machine-in-Unity"><a href="#5-Making-a-Slot-Machine-in-Unity" class="headerlink" title="5. Making a Slot Machine in Unity"></a>5. Making a Slot Machine in Unity</h1><p>In this tutorial, we are going to create a very basic slot machine game in Unity. We will use three Unity primitive objects: a Sphere, a Cylinder, and a Plane.</p>
+<ol>
+<li><p>Create a new 3D project in Unity and import the “Sphere” and “Cylinder” primitives.</p>
+</li>
+<li><p>Create a new C# script called SlotMachine and add the following code:</p>
+</li>
+</ol>
+<p>using UnityEngine;</p>
+<p>using System.Collections;</p>
+<p>public class SlotMachine : MonoBehaviour {</p>
+<p> &#x2F;&#x2F; amount of coins to bet<br>private int _coins &#x3D; 5;</p>
+<p> &#x2F;&#x2F; list of reel symbols<br>private List<string> _symbols &#x3D; new List<string>();</p>
+<p> &#x2F;&#x2F; return true if win, false if lose<br>public bool Flip() { &#x2F;&#x2F; get symbol at index from reel 1<br>string symbol &#x3D; _symbols[0];<br>return (symbol &#x3D;&#x3D; “7”) || (symbol &#x3D;&#x3D; “ BAR”) || (symbol &#x3D;&#x3D; “Cherry”); }</p>
+<p>&#x2F;&#x2F; Update is called once per frame<br>void Update() { &#x2F;&#x2F; check if have enough coins to bet<br>if (_coins &gt; 0) { &#x2F;&#x2F; bet amount is doubled after each loss<br>_coins &#x3D; _coins * 2; &#x2F;&#x2F; update symbols arrays with current state of reels<br>_symbols &#x3D;SymbolReel(0); } else { &#x2F;&#x2F; print message to console telling user they don’t have enough coins to play<br>Debug.Log(“You don’t have enough coins to play.”); } }</p>
+<p> &#x2F;&#x2F; function that generates a random symbol from an array<br>private string SymbolReel(int index) { &#x2F;&#x2F; generate random number between 0 and the size of the array minus 1 	return Random.Range(0, _symbols.Count - 1); } }</p>
+<ol start="3">
+<li><p>Attach the SlotMachine script to the Sphere object in the scene. The sphere will be our reel 1. In the Inspector window, set the Symbol Reel of the Sphere component to “SlotMachine:SymbolReel”. This is where we will call our function that generates a random symbol from an array. We also need to set the Amount of Coins to Bet slider value to 5 so that we can start playing our game. The sphere should now look like this:</p>
+<ol start="4">
+<li><p>Next, we need to create our other two reels. Select the Cylinder object in the scene and set its Symbol Reel in the Inspector window to “SlotMachine:SymbolReel” as well. For reel 2, set its Rotation Rate in degrees per second to 10 so that it spins faster than reel 1. Also for reel 2, set its Width in world units and Height in world units sliders values to 0 so that it is just a small cylinder:</p>
+</li>
+<li><p>Finally, for reel 3, select the Plane object in the scene and set its Symbol Reel in the Inspector window to “SlotMachine:SymbolReel” as well. For this reel, set both its Width and Height slider values to 1000 so that it is much larger than reels 1 and 2:</p>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qjympj.com/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/" data-id="clc2qmrpp00002cv5cjpb7m2y" data-title="Unity How To Make A Slot Machine Tutorial" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/You're-More-Likely-To-Win-With-A-Higher-Bet/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">You&#39;re More Likely To Win With A Higher Bet</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino/" rel="tag">Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Casino-Game/" rel="tag">Casino Game</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competition-Swimwear/" rel="tag">Competition Swimwear</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gear/" rel="tag">Gear</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Live-Casino/" rel="tag">Live Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Casino/" rel="tag">Online Casino</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Online-Games/" rel="tag">Online Games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swimsuits/" rel="tag">Swimsuits</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/">Unity How To Make A Slot Machine Tutorial</a>
+          </li>
+        
+          <li>
+            <a href="/2022/You're-More-Likely-To-Win-With-A-Higher-Bet/">You&#39;re More Likely To Win With A Higher Bet</a>
+          </li>
+        
+          <li>
+            <a href="/2022/Which-Visa-for-Athletics-Betting-in-Canada/">Which Visa for Athletics Betting in Canada</a>
+          </li>
+        
+          <li>
+            <a href="/2022/Saints-Lock-Down-Another-Victory-with-Soft-and-Hard-Totals-/">Saints Lock Down Another Victory with Soft and Hard Totals</a>
+          </li>
+        
+          <li>
+            <a href="/2022/Get-excited-for-free-games-slots-on-the-reels!/">Get excited for free games slots on the reels!</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Adjarabet/">Adjarabet</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino/">Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Dealers/">Casino Dealers</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Competition-Gear/">Competition Gear</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Free-Games/">Free Games</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Swimwear/">Swimwear</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/free-games/">free games</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+    </div>
+  </div>
+
+  
+  
+  <div class="widget-wrap">
+            <h3 class="widget-title">Links</h3>
+             <div class="widget">
+                <ul>
+                    
+                    <li><a target="_blank" rel="noopener" href="https://choegocasino.com/" class="animsition-link">카지노사이트</a></li>
+                    
+                </ul>
+             </div>
+</div>
+            
+</aside>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 By Autoload<br>
+      Driven - <a href="https://qjympj.com" target="_blank">Hadden Kim</a>|Theme - <a href="https://qjympj.com" target="_blank">Competition Swimwear,Swimsuits,Gear - Qjympj.com</a>
+    </div>
+    <div id="footer-link" class="inner">
+      
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
