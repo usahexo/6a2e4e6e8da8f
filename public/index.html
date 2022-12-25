@@ -49,6 +49,117 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Unity-How-To-Make-A-Slot-Machine-Tutorial-" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/" class="article-date">
+  <time class="dt-published" datetime="2022-12-25T02:14:56.000Z" itemprop="datePublished">2022-12-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Casino/">Casino</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/">Unity How To Make A Slot Machine Tutorial</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Unity-How-To-Make-A-Slot-Machine-Tutorial"><a href="#Unity-How-To-Make-A-Slot-Machine-Tutorial" class="headerlink" title="Unity How To Make A Slot Machine Tutorial"></a>Unity How To Make A Slot Machine Tutorial</h1><p>In this tutorial we will be making a basic slot machine using Unity. We will cover the basics of scripting in C#, creating textures and sprites, and rigging up game play mechanics.</p>
+<p>Creating the Project </p>
+<p>Start by creating a new project in Unity and selecting 3D from the setting options. We will be creating a simple slot machine that looks like this:</p>
+<p>To create our machine we will need the following assets:</p>
+<p>3d Model for the machine base<br>3d Models for the reel images<br>2d Texture for the reel spinning animation<br>Sprite for the coin<br>Scripting files<br>The first thing we need to do is create our 3d model for the base of the machine. I found a nice free 3d model from TurboSquid that we can use as our starting point. You can download it here . Once you have downloaded and imported the model into Unity, delete the default cube that is created and replace it with our new model. You will also need to create a plane to use as our background. To do this, select GameObject &gt; 3D Object &gt; Plane from the top menu bar. With both objects selected, click on Add Component &gt; Physics 2D &gt; Mesh Collider 2D. This will add a physics collider to each object which will allow us to interact with them in-game. Now that our scene is set up, lets start creating our reel images.<br>Reel Images<br>For our reel images, we are going to be using some simple 2d textures. I found some free textures on Textures.com that we can use. Download them here . After you have downloaded the textures, import them into Unity and select them from your Project Window . With the textures selected, click on Add Component &gt; Sprite Renderer . This will add a sprite renderer to each texture which will allow us to display them in-game. Next, drag each texture onto one of your reel models (they don’t all have to be on one model). This will automatically create a sprite for each texture and map it to the correct part of the model. Make sure you set the Texture Mode dropdown to Multiple so that each texture is displayed independently. Now that our reel images are set up, lets create our spinning animation texture.<br>Spinning Animation Texture<br>For our spinning animation texture, we are going to create a simple 8 frame animation using Photoshop or any other image editing software. The animation should look something like this:</p>
+<p>Once you have created your animation, import it into Unity and select it from your Project Window . With the animation selected, click on Add Component &gt; Sprite Renderer . This will add a sprite renderer to your animation which will allow you to display it in-game. Next, drag the sprite onto your Machine Base object in Hierarchy view . This will automatically create a sprite for your animation and map it to the correct part of your model.. Finally, set the Texture Mode dropdown to Animated . Now that all of our textures are set up, lets start rigging up game play mechanics.<br>Game Play Mechanics<br>To make our slot machine work properly, we need to script some basic game play functionality into it. For this tutorial we will be using C# scripting but you could also use Java or JavaScript if you prefer. Start by creating a new file called SlotMachineScript in your project and add the following code:  using System; using UnityEngine; &#x2F;&#x2F; Sets up Arduino connection public class SlotMachineScript : MonoBehaviour { &#x2F;&#x2F;Defines variables private int totalCoins &#x3D; 0; &#x2F;&#x2F;The amount of coins currently in circulation private int playerCoins &#x3D; 0; &#x2F;&#x2F;The amount of coins currently held by player private int betCoinAmount &#x3D; 1; &#x2F;&#x2F;The amount bet on each spin private int resultCoinAmount &#x3D; 0; &#x2F;&#x2F;The amount won&#x2F;lost on each spin private int[] reelImages; &#x2F;&#x2F;Array containing images used for reels private bool[] playing ReelOne &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel One private bool[] playing ReelTwo &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel Two private bool[] playing ReelThree &#x3D; new bool[5]; &#x2F;&#x2F;Boolean indicating whether playing Reel Three private void Start() { } &#x2F;** * Spins reels <em>&#x2F; void SpinReels() { if (playingReelOne) return; playingReelOne &#x3D; true; resultCoinAmount &#x3D; 0;totalCoins +&#x3D; betCoinAmount; try { if (betCoinAmount &#x3D;&#x3D; 1) yield return StartCoroutine(“PlayRandomReel”); else yield return StartCoroutine(“PlayAllReels”); } catch {} playingReelOne &#x3D; false; } &#x2F;</em>* * Called when reels stop *&#x2F; void OnStop() { Debug.Log(“Result</p>
+<h1 id="Unity-3D-How-To-Make-A-Slot-Machine"><a href="#Unity-3D-How-To-Make-A-Slot-Machine" class="headerlink" title="Unity 3D - How To Make A Slot Machine"></a>Unity 3D - How To Make A Slot Machine</h1><p>In this tutorial we will be making a slot machine in Unity 3D. </p>
+<p>First, create a new 3D project in Unity and select “3D” as the template.</p>
+<p>Now we will need to create a cube for our slot machine. In the Hierarchy window, click on Create &gt; 3D Object &gt; Cube. Rename the cube “SlotMachine”.</p>
+<p>We will now need to create the three reels for our slot machine. In the Hierarchy window, click on Create &gt; 3D Object &gt; Plane. Name the plane “Reel1”. Duplicate the plane three times by pressing Ctrl + D on your keyboard and name each plane “Reel2”, “Reel3”, and “Reel4”.</p>
+<p>We will now position the planes in front of the SlotMachine cube. In the Scene view, select all four planes and click on the Align button in the toolbar (located at the top-right corner of the Scene view). Select Horizontal Align Middle and Vertical Align Middle. You can also press Alt + A on your keyboard to do this quickly.</p>
+<p>Now we need to create our slots for the reels. In the Hierarchy window, click on Create &gt; 3D Object &gt; Cylinder. Name it “Slot1” and place it at position (X: 0, Y: 0, Z: -5). Do this again for Slot2 and Slot3, but make sure they are positioned at (X: 2, Y: 0, Z: -5) and (X: 4, Y: 0, Z: -5), respectively.</p>
+<p>We will now make our reel spinners. In the Hierarchy window, click on Create &gt; 3D Object &gt; Sphere. Name it “Spinner” and place it at position (X: 1, Y: 1, Z: -2).</p>
+<p> Finally, we need to add a material to our SlotMachine cube. In the Project window, double-click on Materials and rename it “Mat”. Click on Add New Material and rename it “Metal”. Drag Metal onto SlotMachine in the Hierarchy window.</p>
+<p>Now that we have everything set up, we can start scripting! Open up Scripts &gt; SlotMachineScript in MonoDevelop or your favorite text editor. At the top of the script we willdeclare some variables that will hold our reel data .  </p>
+<p>public class SlotMachineScript : MonoBehaviour {<br>[SerializeField] private int[] _reelData &#x3D; new int[4]; &#x2F;&#x2F; Reel data   </p>
+<p>Next we will add a function that will generate random reel data . </p>
+<p>private void genReelData() { &#x2F;&#x2F; Generates random reel data }<br>} </p>
+<p>This function will take an input of two integers between 0 and 3 inclusive . It will then use these numbers as indices into an array to generate random reel data . </p>
+<p>private void genReelData(int num1, int num2) { &#x2F;&#x2F; Generates random reel data int index1 &#x3D; _reelData[num1]; int index2 &#x3D; _reelData[num2]; &#x2F;&#x2F; Gets random number between 0 and 9 inclusive Random randomNumber &#x3D; new Random(); int result &#x3D; randomNumber.Next(10); &#x2F;&#x2F; Assigns value at result to _reelData[index1] _reelData[index1] &#x3D; result; &#x2F;&#x2F; Assigns value at result to _reelData[index2] _reelData[index2] &#x3D; result; }</p>
+<h1 id="How-To-Create-A-Slot-Machine-In-Unity-4-Unity-5-How-To-Make-A-Slot-Machine"><a href="#How-To-Create-A-Slot-Machine-In-Unity-4-Unity-5-How-To-Make-A-Slot-Machine" class="headerlink" title="How To Create A Slot Machine In Unity 4. Unity 5 - How To Make A Slot Machine"></a>How To Create A Slot Machine In Unity 4. Unity 5 - How To Make A Slot Machine</h1><p>In this tutorial we will create a basic slot machine game in Unity 5. You will learn how to create the spinning wheel and how to add the winning and losing result.</p>
+<p>##Creating the Spinning Wheel</p>
+<p>The spinning wheel is a simple object that can be created using a Unity primitive. In the Hierarchy panel, create a Spinner object and rename it to SpinWheel.</p>
+<p>Select the SpinWheel object and in the Inspector panel, change the Size to (X: 2, Y: 5, Z: 1). This will create a small wheel that is 2 units wide by 5 units high and has a depth of 1 unit.</p>
+<p>With the SpinWheel selected, click on the Add Component button at the bottom of the Inspector panel and select Mesh Filter. Change the Mesh Preset to Circle and set the Radius to 1. This will create a circular mesh for the wheel.</p>
+<p>Now we need to create a Material for our wheel. In the Project panel, right-click on Materials and select Create &gt; Material. Rename the material to SpinWheelMaterial and open it for editing.</p>
+<p>In the Inspector panel, change the Shader to Standard &gt; Diffuse. Then click on the Add button next to Main Texture and select Load Image.. Navigate to &#x2F;Spinners&#x2F;Prefabs&#x2F;SpinwheelTexture.jpg and select it. Click on Apply in order to apply these changes.</p>
+<p>Back in Unity, select Main Camera from the Hierarchy panel and in the Inspector panel disable both Cast Shadows and Receive Shadows (we don’t need them for this simple game).</p>
+<p>  Now we need to attach our SpinWheel object to our Main Camera so it will follow it around as we move our camera around. With Main Camera selected, go to Component &gt; Physics &gt; Rigidbody2D and disable Dragging checkbox (we don’t want our wheel spinning around randomly). Then click on Add Component button at bottom of Inspector panel and select Wheel Collider 2D. This will add a collider component to our SpinWheel object which will make it interact with other objects in our scene when we run our game. </p>
+<p> With SpinWheel still selected, go back to Add Component &gt; Mesh Filter menu and underPreset choose Plane. This will give us a flat plane mesh instead of a curved one. Click on Applybutton in order for these changes take effect.. </p>
+<p> Finally, we need to position our SpinWheel object in front of our Main Camera so you can see it when you play our game.. In Hierarchy Panel select Transform &gt; Positionand enter these values: X: 0, Y: -5, Z: 5 .This will position our spinwheel 5 units from camera horizontally and 0 units from camera vertically (assuming you have your MainCamera located at 0 ,0 ,0 in scene)</p>
+<p> You should now have something that looks like this:</p>
+ <img src="https://images-na.ssl-images-amazon.com/images/I/81st4aO4dUL._SL1500_.jpg" />
+
+
+<p> ##Adding The Results Text<br>Now we’ll add some text elements that will show whether you’ve won or lost money depending on outcome of spin.. In Hierarchy Panel create new Text GameObjectand rename it ResultsText .  With ResultsText selected go to Component &gt; UI &gt; Text .In Text properties window set Font Sizeto 20 ,TextColorto white , Alignmentto Center Alignedand Linespacingto 0 .Then under Sprite Renderer setSourceRectangleModeto Wrap Along Extent .This way our text will be displayed across whole screen instead of being centered only in middle.. </p>
+<p> Next we need two images that will indicate whether player has won or lost money .Create new folder called &#x2F;Spinners&#x2F;Textures inside your project’s Assets folderand within that folder create new file called ResultWinTexture .Open ResultWinTexture file for editing in any photo editor such as Photoshopor Gimp . Paste following imageinto file : </p>
+ <img src="/Spinners/Textures/ResultWinTexture" /> 
+
+<p> For ResultLoseTexturefile do same thing but use following image instead : </p>
+ <img src="/Spinners/Textures/ResultLoseTexture" /> 
+
+<p> Back in Unity under &#x2F;Spinners&#x2F;Texturesfolder find two textures you just created( ResultWinTextureand ResultLoseTexture )and drag them into Texture propertywindowunder Sprite Rendererof ResultsText GameObject ..You should now see something like this :  </p>
+<p> ##Making The Slot Machine Work Now that we have all basic elements in place its time start making our slot machine actually do something ! Lets first create functionthatwill determine outcome of player’s spin ..Create new C# script filecalled SlotMachineMathandsave it into folder &#x2F;Assets&#x2F;Scripts .Open SlotMachineMathscript file for editing .Paste following code into it :<br>&lt;&#x2F;</p>
+<h1 id="5-Making-a-Slot-Machine-in-Unity"><a href="#5-Making-a-Slot-Machine-in-Unity" class="headerlink" title="5. Making a Slot Machine in Unity"></a>5. Making a Slot Machine in Unity</h1><p>In this tutorial, we are going to create a very basic slot machine game in Unity. We will use three Unity primitive objects: a Sphere, a Cylinder, and a Plane.</p>
+<ol>
+<li><p>Create a new 3D project in Unity and import the “Sphere” and “Cylinder” primitives.</p>
+</li>
+<li><p>Create a new C# script called SlotMachine and add the following code:</p>
+</li>
+</ol>
+<p>using UnityEngine;</p>
+<p>using System.Collections;</p>
+<p>public class SlotMachine : MonoBehaviour {</p>
+<p> &#x2F;&#x2F; amount of coins to bet<br>private int _coins &#x3D; 5;</p>
+<p> &#x2F;&#x2F; list of reel symbols<br>private List<string> _symbols &#x3D; new List<string>();</p>
+<p> &#x2F;&#x2F; return true if win, false if lose<br>public bool Flip() { &#x2F;&#x2F; get symbol at index from reel 1<br>string symbol &#x3D; _symbols[0];<br>return (symbol &#x3D;&#x3D; “7”) || (symbol &#x3D;&#x3D; “ BAR”) || (symbol &#x3D;&#x3D; “Cherry”); }</p>
+<p>&#x2F;&#x2F; Update is called once per frame<br>void Update() { &#x2F;&#x2F; check if have enough coins to bet<br>if (_coins &gt; 0) { &#x2F;&#x2F; bet amount is doubled after each loss<br>_coins &#x3D; _coins * 2; &#x2F;&#x2F; update symbols arrays with current state of reels<br>_symbols &#x3D;SymbolReel(0); } else { &#x2F;&#x2F; print message to console telling user they don’t have enough coins to play<br>Debug.Log(“You don’t have enough coins to play.”); } }</p>
+<p> &#x2F;&#x2F; function that generates a random symbol from an array<br>private string SymbolReel(int index) { &#x2F;&#x2F; generate random number between 0 and the size of the array minus 1 	return Random.Range(0, _symbols.Count - 1); } }</p>
+<ol start="3">
+<li><p>Attach the SlotMachine script to the Sphere object in the scene. The sphere will be our reel 1. In the Inspector window, set the Symbol Reel of the Sphere component to “SlotMachine:SymbolReel”. This is where we will call our function that generates a random symbol from an array. We also need to set the Amount of Coins to Bet slider value to 5 so that we can start playing our game. The sphere should now look like this:</p>
+<ol start="4">
+<li><p>Next, we need to create our other two reels. Select the Cylinder object in the scene and set its Symbol Reel in the Inspector window to “SlotMachine:SymbolReel” as well. For reel 2, set its Rotation Rate in degrees per second to 10 so that it spins faster than reel 1. Also for reel 2, set its Width in world units and Height in world units sliders values to 0 so that it is just a small cylinder:</p>
+</li>
+<li><p>Finally, for reel 3, select the Plane object in the scene and set its Symbol Reel in the Inspector window to “SlotMachine:SymbolReel” as well. For this reel, set both its Width and Height slider values to 1000 so that it is much larger than reels 1 and 2:</p>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qjympj.com/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/" data-id="clc2qmrpp00002cv5cjpb7m2y" data-title="Unity How To Make A Slot Machine Tutorial" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-You&#39;re-More-Likely-To-Win-With-A-Higher-Bet" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/You're-More-Likely-To-Win-With-A-Higher-Bet/" class="article-date">
@@ -757,71 +868,6 @@
 
 
   
-    <article id="post-What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino/" class="article-date">
-  <time class="dt-published" datetime="2022-11-22T19:24:37.000Z" itemprop="datePublished">2022-11-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Online-Casino/">Online Casino</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino/">What You Need to Know About National Casino Experiences Fresno Casino</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino"><a href="#What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino" class="headerlink" title="What You Need to Know About National Casino Experiences Fresno Casino"></a>What You Need to Know About National Casino Experiences Fresno Casino</h1><p>A casino can be a great place to visit for a number of reasons - whether you’re looking for some fun and excitement, or you’re hoping to make some money. If you’re planning on visiting a casino, it’s important to understand what to expect. Here’s what you need to know about national casino experiences Fresno casino.</p>
-<p>The first thing you should know is that casinos vary greatly in terms of what they offer. Some casinos are focused largely on gaming, while others offer a wider range of activities, such as concerts, dining, and shopping. It’s important to do your research before deciding on a casino to visit, so that you can be sure you’re getting the most out of your experience.</p>
-<p>In addition to the variety of offerings, casinos also vary significantly in terms of size. Some are small and intimate, while others are massive complexes that can easily swallow up an entire day (or more). Again, it’s important to know what to expect so that you don’t waste time and money travelling to a casino that’s not right for you.</p>
-<p>One thing all casinos have in common is that they’re designed for gambling. If gambling isn’t your thing, then it might be best to steer clear of casinos altogether. There are certainly other places where you can find entertainment without risking any money. However, if gambling is something you enjoy, then casinos can be a lot of fun. Just be sure to set limits for yourself and stick to them - it’s easy to lose track of time and money when playing games like blackjack and roulette.</p>
-<p>Another thing worth noting is that casinos can be quite expensive. Expect to pay for parking, food, drink, and even admission fees in some cases. It’s important to plan ahead and budget appropriately so that you don’t wind up spending more than you intended.</p>
-<p>Finally, always remember that when gambling in a casino, the house always has the edge. This means that over time your chances of losing money are greater than winning money - even if you’re playing perfectly Accordingto this website </p>
-<p> So if gambling isn’t something you do lightly or regularly, it might be best avoid playing any games in a casino altogether. Instead, take advantage of the other attractions the casino has to offer!</p>
-<h1 id="National-Casino-Experiences-to-Debut-in-Fresno-This-Month"><a href="#National-Casino-Experiences-to-Debut-in-Fresno-This-Month" class="headerlink" title="National Casino Experiences to Debut in Fresno This Month"></a>National Casino Experiences to Debut in Fresno This Month</h1><p>Casino enthusiasts in Fresno will soon have a new place to try their luck. National Casino Experiences (NCE) will open its doors in the city this month, offering visitors a variety of gaming options, including slot machines, table games, and poker.</p>
-<p>NCE is the latest venture from The National Casino Group (NCG), which operates casinos in several states across the country. The company has been planning the Fresno casino for over two years, and promises an experience that will be “second to none.”</p>
-<p>“Fresno is a great market for us,” said NCG CEO Lenny Wexler. “With our combination of Las Vegas-style gaming and regional hospitality, we think NCE will be a big hit with local residents and tourists alike.”</p>
-<p>The casino will feature more than 350 slot machines, as well as blackjack, craps, roulette, and baccarat tables. There will also be a 24-hour poker room with 12 tables. In addition to traditional gambling options, NCE will offer guests unique experiences such as virtual reality gaming and sports betting.</p>
-<p>The casino is scheduled to open on October 17th. It will be located at the corner of Shaw and Blackstone Avenues in northeast Fresno.</p>
-<h1 id="Get-Ready-for-National-Casino-Experiences-in-Fresno"><a href="#Get-Ready-for-National-Casino-Experiences-in-Fresno" class="headerlink" title="Get Ready for National Casino Experiences in Fresno"></a>Get Ready for National Casino Experiences in Fresno</h1><p>National casino experiences are coming to Fresno, California, this summer! If you’re a fan of gambling, gaming, and all things Las Vegas-style, you’ll be excited to know that two major casino resorts are slated to open in the area.</p>
-<p>The first is the San Manuel Indian Bingo and Casino. This resort is set to open in June and will offer over 2,000 slot machines, 60 gaming tables, and a hotel with 300 rooms. The second is the Chukchansi Gold Resort and Casino. This resort is set to open in July and will offer 1,700 slot machines, 44 gaming tables, and a hotel with 350 rooms.</p>
-<p>Both resorts are expected to bring in tourism dollars and create jobs for locals. In addition to gambling, both resorts will also offer restaurants, spas, shopping, and other entertainment options. So if you’re looking for a fun summer getaway, look no further than Fresno!</p>
-<h1 id="National-Casino-Experiences-Coming-to-Fresno-This-Summer"><a href="#National-Casino-Experiences-Coming-to-Fresno-This-Summer" class="headerlink" title="National Casino Experiences Coming to Fresno This Summer"></a>National Casino Experiences Coming to Fresno This Summer</h1><p>The summer of 2019 is set to be a big one for Fresno residents, as the city welcomes its first ever casino resort. National Gaming Inc. has announced that it will be opening a new property in the heart of the city, bringing with it all the excitement and glamour of Las Vegas-style casinos.</p>
-<p>The new resort will be located on Fresno’s riverfront, occupying a prime spot on Friant Parkway. It will feature a variety of gaming options, including traditional table games and slots, as well as more modern offerings like eSports and VR venues. There will also be a wide range of restaurants and other amenities on site, making it the perfect destination for a night out on the town.</p>
-<p>National Gaming Inc. is no stranger to the casino industry, with properties located throughout the United States. The company has already received approval from the Fresno City Council and is now in the process of securing construction permits. It is expected that work will begin in early 2019, with completion scheduled for later in the year.</p>
-<p>This new development is sure to be a boon for Fresno’s economy, creating hundreds of jobs and attracting tourists from all over California. It’s also likely to boost interest in downtown Fresno, which has been seeing increased development in recent years. Excitement is already building for the debut of this one-of-a-kind resort, so be sure to keep an eye out for further updates!</p>
-<h1 id="National-Casino-Experiences-Coming-to-Fresno-–-Gaming-Dining-and-More"><a href="#National-Casino-Experiences-Coming-to-Fresno-–-Gaming-Dining-and-More" class="headerlink" title="National Casino Experiences Coming to Fresno – Gaming, Dining and More!"></a>National Casino Experiences Coming to Fresno – Gaming, Dining and More!</h1><p>The National Casino Experiences is coming to Fresno, promising gaming, dining and more for residents and visitors alike! The casino will be located on the northeast corner of Shaw and Kings Canyon, with easy access from Highway 99.</p>
-<p>The casino is expected to create nearly 1,000 jobs in the region, as well as generate over $100 million in annual economic activity. That’s great news for Fresno, which has been hit hard by the recession.</p>
-<p>In addition to gaming options like blackjack, craps and slot machines, the casino will also offer a variety of restaurants and a 12-screen movie theater. There will also be meeting spaces and a spa.</p>
-<p>The National Casino Experiences is scheduled to open in late 2010 or early 2011. In the meantime, you can check out their website at <a target="_blank" rel="noopener" href="http://www.nationalcasinorealestate.com/">www.nationalcasinorealestate.com</a> for more information.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://qjympj.com/2022/What-You-Need-to-Know-About-National-Casino-Experiences-Fresno-Casino/" data-id="claslvta3000064v56cpb6xje" data-title="What You Need to Know About National Casino Experiences Fresno Casino" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -848,6 +894,10 @@
       <ul>
         
           <li>
+            <a href="/2022/Unity-How-To-Make-A-Slot-Machine-Tutorial-/">Unity How To Make A Slot Machine Tutorial</a>
+          </li>
+        
+          <li>
             <a href="/2022/You're-More-Likely-To-Win-With-A-Higher-Bet/">You&#39;re More Likely To Win With A Higher Bet</a>
           </li>
         
@@ -861,10 +911,6 @@
         
           <li>
             <a href="/2022/Get-excited-for-free-games-slots-on-the-reels!/">Get excited for free games slots on the reels!</a>
-          </li>
-        
-          <li>
-            <a href="/2022/10-Roulette-Tips-to-Help-You-Win-the-Soccer-World-Cup/">10 Roulette Tips to Help You Win the Soccer World Cup</a>
           </li>
         
       </ul>
